@@ -1,0 +1,97 @@
+body {
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 70px;
+}
+.page {
+  transition: all 0.8s ease-out;
+  position: absolute;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.page.ng-leave {
+  left: 0;
+  opacity: 1;
+}
+.page.ng-leave.ng-leave-active {
+  left: -100%;
+  opacity: 0;
+}
+.page.ng-enter {
+  left: 100%;
+  opacity: 0;
+}
+.page.ng-enter.ng-enter-active {
+  left: 0;
+  opacity: 1;
+}
+#start {
+  position: relative;
+  height: 100vh;
+}
+#start > div {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#start > div > h1 {
+  font-size: 10em;
+}
+#start > div > img {
+  margin: 20px auto;
+  width: 100%;
+}
+.footer-menu {
+  line-height: 50px;
+  margin-bottom: 0;
+}
+.footer-menu > li {
+  width: 32%;
+  text-align: center;
+}
+.price {
+  font-size: 1.5em;
+  color: #e4393c;
+}
+.hr {
+  margin: 0;
+}
+.text-div {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+.overflow {
+  overflow: hidden;
+}
+.activity > ul {
+  padding: 0;
+}
+.activity > ul > li.divider {
+  margin: 0;
+}
+.activity > ul > li > a {
+  line-height: 2.4em;
+}
+@media screen and (min-width: 768px) {
+  #menu > a.navbar-right.btn-success {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+}
+#footer > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+table.my_table > tbody > tr > td {
+  vertical-align: middle;
+  border: 0;
+}
+table.my_table > thead > tr > th {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}

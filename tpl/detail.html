@@ -1,0 +1,33 @@
+<div ng-include=" 'tpl/header.html' "></div>
+
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a style="color:cornflowerblue" href="#/m">首页</a> &nbsp;/ &nbsp;详情
+      </h3>
+    </div>
+
+    <div class="panel-body">
+      <h2>{{dt.name}}</h2>
+      <hr>
+      <div>
+        <img ng-src="img/{{dt.img_lg}}" class="img-responsive" alt="">
+      </div>
+      <div class="text-div">
+        <p><b>主要原料:</b>{{dt.material}}</p>
+        <p>{{dt.detail}}</p>
+        <hr class="hr">
+        <span class="price">{{dt.price | currency:'￥'}}</span>
+      </div>
+    </div>
+    <div class="panel-footer overflow">
+      <div class="pull-right">
+        <a href="#/o/{{dt.did}}" class="btn btn-success">我要订餐</a>
+        <a href="#/m" class="btn btn-warning">我再看看</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div ng-include=" 'tpl/footer.html' "></div>
